@@ -26,8 +26,12 @@ function printOut() {
     connection.query("SELECT * FROM products", function (err, res) {
         if (err) throw err;
         for (var i = 0; i < res.length; i++) {
-            console.log("ID Number: " + res[i].id + "\n" + "Product: " + res[i].product_name + "\n" + "Department: " + res[i].department_name + "\n" + "Price: $" + res[i].price + "\n" + "Quantity: " + res[i].stock_quantity);
-            console.log("---------")
+            console.log("ID Number: " + res[i].id + "\n" 
+            + "Product: " + res[i].product_name + "\n" 
+            + "Department: " + res[i].department_name + "\n" 
+            + "Price: $" + res[i].price + "\n" 
+            + "Quantity: " + res[i].stock_quantity);
+            console.log("--------------")
         }
 
         //start inquirer prompts
@@ -43,7 +47,7 @@ function askQuestion() {
         {
             type: "input",
             name: "id",
-            message: "Which item (by ID) would you like to purchase?",
+            message: "To purchase an item please enter it by ID.",
         },
         {
             type: "input",
