@@ -47,7 +47,7 @@ function askQuestion() {
         {
             type: "input",
             name: "id",
-            message: "To purchase an item please enter it by ID.",
+            message: "To purchase an item please enter it by ID:",
         },
         {
             type: "input",
