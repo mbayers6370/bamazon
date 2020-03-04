@@ -14,4 +14,4 @@ If there are enough products inventory is updated and the total price is printed
 If not, an "insufficient amount" is printed out.
 
 
-![](bamazon.gif)
+![](bamazon2.gif)
